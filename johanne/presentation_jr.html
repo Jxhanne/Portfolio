@@ -13,22 +13,21 @@
 <body class="bg-light">
 
     <header class="bg-dark text-white p-3 sticky-top">
-    <div class="container">
-        <div class="d-flex justify-content-between align-items-center mb-2">
-            <h1 class="mb-0">Portfolio</h1>
+        <div class="container-fluid px-5 d-flex align-items-center justify-content-between">
+            <h2 class="mb-0">Portfolio JR</h2>
+            <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <a href="#a-propos" class="btn btn-outline-light btn-sm">À propos</a>
+                <a href="#contact" class="btn btn-outline-light btn-sm">Contact</a>
+                <a href="#formation" class="btn btn-outline-light btn-sm">Formation</a>
+                <a href="#experiences" class="btn btn-outline-light btn-sm">Expériences</a>
+                <a href="#competences" class="btn btn-outline-light btn-sm">Compétences</a>
+                <a href="#interets" class="btn btn-outline-light btn-sm">Centres d'intérêt</a>
+                <a href="#competences-perso" class="btn btn-outline-light btn-sm">Compétences personnelles</a>
+                <a href="#projets" class="btn btn-outline-light btn-sm">Projets</a>
+            </div>
             <a href="../index.html" class="btn btn-outline-light btn-sm">← Retour</a>
         </div>
-        <div class="d-flex flex-wrap gap-2 justify-content-center"></div>
-            <a href="#a-propos" class="btn btn-outline-light btn-sm">À propos</a>
-            <a href="#contact" class="btn btn-outline-light btn-sm">Contact</a>
-            <a href="#formation" class="btn btn-outline-light btn-sm">Formation</a>
-            <a href="#experiences" class="btn btn-outline-light btn-sm">Expériences</a>
-            <a href="#competences" class="btn btn-outline-light btn-sm">Compétences</a>
-            <a href="#interets" class="btn btn-outline-light btn-sm">Centres d'intérêt</a>
-            <a href="#competences-perso" class="btn btn-outline-light btn-sm">Compétences personnelles</a>
-        </div>
-    </div>
-</header>
+    </header>
 
     <main class="container mt-5 mb-5">
         <div class="row justify-content-center">
@@ -44,7 +43,7 @@
                 </div>
 
                 <!-- Présentation -->
-                <div id="a-propos" class="card shadow mb-4">
+                <div id="a-propos" class="card shadow mb-4 scroll-offset">
                     <div class="card-body p-4">
                         <h4 class="section-title">À propos</h4>
                         <p class="text-muted">
@@ -56,7 +55,7 @@
                 </div>
 
                 <!-- Contacts -->
-                <div id="contact" class="card shadow">
+                <div id="contact" class="card shadow mb-4 scroll-offset">
                     <div class="card-body p-4">
                         <h4 class="section-title">Contact</h4>
 
@@ -95,7 +94,7 @@
                 </div>
 <br>
                 <!-- Formation -->
-                <div id="formation" class="card shadow mb-4">
+                <div id="formation" class="card shadow mb-4 scroll-offset">
                     <div class="card-body p-4">
                         <h4 class="section-title">Formation</h4>
                         <p class="text-muted">
@@ -106,7 +105,7 @@
                 </div>
 
                 <!-- Expériences -->
-                <div id="experiences" class="card shadow mb-4">
+                <div id="experiences" class="card shadow mb-4 scroll-offset">
                     <div class="card-body p-4">
                         <h4 class="section-title">Expériences</h4>
 
@@ -146,7 +145,7 @@
                 </div>
 
                 <!-- Compétences -->
-                <div id="competences" class="card shadow mb-4">
+                <div id="competences" class="card shadow mb-4 scroll-offset">
                     <div class="card-body p-4">
                         <h4 class="section-title">Compétences</h4>
 
@@ -216,7 +215,7 @@
                 </div>
 
                 <!-- Centres d'intérêt -->
-                <div id="interets" class="card shadow mb-4">
+                <div id="interets" class="card shadow mb-4 scroll-offset">
                     <div class="card-body p-4">
                         <h4 class="section-title">Centres d'intérêt</h4>
                         <ul class="text-muted mb-0">
@@ -229,7 +228,7 @@
                 </div>
 
                 <!-- Compétences personnelles -->
-                <div id="competences-perso" class="card shadow mb-4">
+                <div id="competences-perso" class="card shadow mb-4 scroll-offset">
                     <div class="card-body p-4">
                         <h4 class="section-title">Compétences personnelles</h4>
                         <ul class="text-muted mb-0">
@@ -237,6 +236,48 @@
                             <li>Autonome</li>
                             <li>Organisée</li>
                         </ul>
+                    </div>
+                </div>
+
+                <!-- Projets -->
+                <div id="projets" class="card shadow mb-4 scroll-offset">
+                    <div class="card-body p-4">
+                        <h4 class="section-title">Projets</h4>
+
+                        <!-- Projet 1 -->
+                        <div class="mb-4">
+                            <h5 class="fw-semibold mb-1">Pacman en C++</h5>
+                            <p class="text-muted small mb-2">Recréation du jeu Pacman en C++ avec gestion des collisions, des fantômes et du score, dans le cadre d'un projet de programmation orientée objet.</p>
+                            <div class="d-flex gap-3">
+                                <img src="../img/Pacman1.png" class="rounded projet-img" onclick="ouvrirImage(this.src)">
+                                <img src="../img/Pacman2.png" class="rounded projet-img" onclick="ouvrirImage(this.src)">
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <!-- Projet 2 -->
+                        <div class="mb-4">
+                            <h5 class="fw-semibold mb-1">Immoform</h5>
+                            <p class="text-muted small mb-2">Création d'un site web pour gérer des formations immobilières.</p>
+                            <div class="d-flex gap-3">
+                                <img src="../img/Immoform1.png" class="rounded projet-img" onclick="ouvrirImage(this.src)">
+                                <img src="../img/Immoform2.png" class="rounded projet-img" onclick="ouvrirImage(this.src)">
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <!-- Projet 3 -->
+                        <div class="mb-0">
+                            <h5 class="fw-semibold mb-1">SLAM BTS SIO </h5>
+                            <p class="text-muted small mb-2">Développement d'une interface web permettant de composer des chorégraphies envoyées via notification à un robot pour les exécuter automatiquement.</p>
+                            <div class="d-flex gap-3">
+                                <img src="../img/SLAM1.png" class="rounded projet-img" onclick="ouvrirImage(this.src)">
+                                <img src="../img/SLAM2.png" class="rounded projet-img" onclick="ouvrirImage(this.src)">
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 
@@ -249,5 +290,17 @@
         <p class="mb-0">© 2026 Johanne Raitière & Alexandre Peytavi</p>
     </footer>
 
+
+    <!-- Visionneuse -->
+    <div id="visionneuse" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:9999; cursor:zoom-out;" onclick="this.style.display='none'">
+        <img id="visionneuse-img" src="" style="max-width:90%; max-height:90%; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); border-radius:8px;">
+    </div>
+
+        <script>
+            function ouvrirImage(src) {
+                document.getElementById('visionneuse-img').src = src;
+                document.getElementById('visionneuse').style.display = 'block';
+            }
+        </script>
 </body>
 </html>
