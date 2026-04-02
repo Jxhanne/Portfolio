@@ -1,8 +1,19 @@
-        .card {
-            border-radius: 15px;
-            overflow: hidden;
+        body {
+            background: linear-gradient(135deg, #f0f2f5 0%, #e8ecf5 50%, #dde3f0 100%);
+            min-height: 100vh;
+        }
+        
+       .card {
+            border-left: 4px solid transparent !important;
+            transition: transform 0.2s, box-shadow 0.2s, border-left-color 0.2s;
         }
 
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(2, 6, 53, 0.2) !important;
+            border-left-color: #020635 !important;
+        }
+        
         .profile-img {
             width: 200px;
             height: 200px;
@@ -56,4 +67,9 @@
 
         .projet-img:hover {
             transform: scale(1.05);
+        }
+        body {
+            background-color: #f0f2f5;
+            background-image: radial-gradient(#c9d1d9 1px, transparent 1px);
+            background-size: 20px 20px;
         }
