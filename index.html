@@ -1,11 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio_Web</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    
+    <header class="bg-dark text-white p-3">
+        <div class="container d-flex justify-content-between">
+            <h1>Portfolio</h1>
+        </div>
+    </header>
+
+    <main class="container mt-5 text-center">
+        <br><br>
+    <h2>Choisissez un profil</h2>
+
+    <div class="row justify-content-center mt-4">
+
+        <!-- Profil Johanne -->
+        <div class="col-md-4">
+            <div class="card shadow">
+                <img src="img/johanne.png" class="card-img-top" alt="Johanne">
+                <div class="card-body">
+                    <h5 class="card-title">Johanne</h5>
+                    <a href="johanne.html" class="btn btn-primary">Voir profil</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Profil Alexandre -->
+        <div class="col-md-4">
+            <div class="card shadow">
+                <img src="img/alexandre.jpg" class="card-img-top" alt="Alexandre">
+                <div class="card-body">
+                    <h5 class="card-title">Alexandre</h5>
+                    <a href="alexandre.html" class="btn btn-secondary">Voir profil</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </main>
+    <br><br><br><br><br><br>
+    <footer class="bg-light text-center p-3 mt-5">
+        <p>© 2026 Johanne Raitière & Alexandre Peytavi</p>
+    </footer>
+
 </body>
 </html>
