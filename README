@@ -1,0 +1,40 @@
+# Portfolio Web – Johanne Raitière & Alexandre Peytavi
+ 
+## Présentation du projet
+ 
+Ce projet est un portfolio web à deux profils, permettant de présenter nos parcours, compétences, expériences et projets réalisés dans le cadre de notre première année de Bachelor Informatique à l'EPSI Nantes.
+ 
+Le site propose une page d'accueil permettant de choisir entre les deux profils, chacun disposant de sa propre page de présentation détaillée.
+
+ 
+## Technologies utilisées
+ 
+- **HTML5 / CSS3** – Structure et mise en forme des pages
+- **Bootstrap 5.3** – Framework CSS pour le design responsive
+- **Font Awesome 6.7** – Icônes (contact, réseaux sociaux, etc.)
+- **Apache2** – Serveur web pour l'hébergement sur VM
+- **OpenSSL** – Génération du certificat SSL auto-signé
+- **Git / GitHub** – Gestion de versions et collaboration
+ 
+## Structure du projet
+ 
+```
+Portfolio/
+├── index.html               # Page d'accueil (choix du profil)
+├── index.css                # Styles de la page d'accueil
+├── alexandre/
+│   ├── presentation_ap.html # Page de présentation d'Alexandre
+│   └── presentation_ap.css  # Styles associés
+├── johanne/
+│   ├── presentation_jr.html # Page de présentation de Johanne
+│   └── presentation_jr.css  # Styles associés
+└── img/                     # Images (photos de profil, projets)
+```
+ 
+## Hébergement
+ 
+Le site est hébergé sur une Vm sur le proxmox de l'école avec :
+- **Apache2** comme serveur web
+- Un **VirtualHost HTTP** sur le port 80 avec redirection automatique vers HTTPS
+- Un **VirtualHost HTTPS** sur le port 443 avec certificat SSL auto-signé
+- Le site est accessible via l'IP de la VM.
