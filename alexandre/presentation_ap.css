@@ -13,7 +13,7 @@
             box-shadow: 0 8px 25px rgba(2, 6, 53, 0.2) !important;
             border-left-color: #662827 !important;
         }
-        
+
         .profile-img {
             width: 200px;
             height: 200px;
@@ -72,4 +72,31 @@
             background-color: #f0f2f5;
             background-image: radial-gradient(#c9d1d9 1px, transparent 1px);
             background-size: 20px 20px;
+        }
+
+
+        .toggle-check { display: none; }
+        .description-toggle {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        }
+
+        .toggle-check:checked ~ .description-toggle {
+        display: block;
+        }
+
+        .voir-plus-label {
+        cursor: pointer;
+        font-size: 0.85rem;
+        color: #6c6e72;
+        }
+
+        .voir-plus-label::before { content: "voir plus..."; }
+
+        .toggle-check:checked ~ * .voir-plus-label::before,
+        .toggle-check:checked + .description-toggle + .voir-plus-label::before {
+        content: "voir moins";
         }

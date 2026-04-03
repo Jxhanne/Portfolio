@@ -217,30 +217,53 @@
                     </div>
                 </div>
 
-                <!-- Projets -->
-                <div id="projets" class="card shadow mb-4 scroll-offset">
-                    <div class="card-body p-4">
-                        <h4 class="section-title">Projets</h4>
+<!-- Projets -->
+<div id="projets" class="card shadow mb-4 scroll-offset">
+    <div class="card-body p-4">
+        <h4 class="section-title">Projets</h4>
 
-                        <div class="mb-4">
-                            <h5 class="fw-semibold mb-1">Pacman en C++</h5>
-                            <p class="text-muted small mb-2">Recréation du jeu Pacman en C++ avec gestion des collisions, des fantômes et du score, dans le cadre d'un projet de programmation orientée objet.</p>
-                            <div class="d-flex gap-3">
-                                <img src="../img/Pacman1.png" class="rounded projet-img" onclick="ouvrirImage(this.src)">
-                                <img src="../img/Pacman2.png" class="rounded projet-img" onclick="ouvrirImage(this.src)">
-                            </div>
-                        </div>
+        <!-- Pacman -->
+        <div class="mb-4">
+            <h5 class="fw-semibold mb-1">Pacman en C++</h5>
 
-                        <hr>
+            <input type="checkbox" id="toggle-pacman" class="toggle-check" hidden>
 
-                        <div class="mb-4">
-                            <h5 class="fw-semibold mb-1">Immoform</h5>
-                            <p class="text-muted small mb-2">Création d'un site web pour gérer des formations immobilières.</p>
-                            <div class="d-flex gap-3">
-                                <img src="../img/Immoform1.png" class="rounded projet-img" onclick="ouvrirImage(this.src)">
-                                <img src="../img/Immoform2.png" class="rounded projet-img" onclick="ouvrirImage(this.src)">
-                            </div>
-                        </div>
+            <p class="text-muted small mb-2 description-toggle">
+            Recréation du jeu Pacman en C++ dans le cadre d'un projet de programmation orientée objet.
+            Le joueur contrôle Pacman dans un labyrinthe et doit manger tous les points en évitant les fantômes.
+            Il peut se téléporter de gauche à droite de la carte pour ressortir de l'autre côté.
+            Le jeu dispose d'un système de vies : vous démarrez avec 3 vies et perdez une vie à chaque contact avec un fantôme.
+            Différents éléments de score sont présents : les points normaux, les points bonus, une cerise 
+            qui apparaît après avoir mangé 2 points bonus, et un bonus vie qui apparaît quand il ne reste qu'une vie.
+            </p>
+            <label for="toggle-pacman" class="voir-plus-label"></label>
+            <div class="d-flex gap-3 mt-2">
+                <img src="../img/Pacman1.png" class="rounded projet-img" onclick="ouvrirImage(this.src)">
+                <img src="../img/Pacman2.png" class="rounded projet-img" onclick="ouvrirImage(this.src)">
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Immoform -->
+        <div class="mb-4">
+            <h5 class="fw-semibold mb-1">Immoform</h5>
+            <input type="checkbox" id="toggle-immoform" class="toggle-check" hidden>
+            <p class="text-muted small mb-2 description-toggle">
+            Site web de gestion de formations immobilières développé pour un centre de formation.
+            La plateforme gère trois types de formations : en ligne pour les agences adhérentes, 
+            en présentiel ouvert à toutes les agences, et des prestations de conseil sur demande.
+            Le projet inclut deux interfaces distinctes : une pour les membres internes et une pour les formations externes.
+            </p>
+            <label for="toggle-immoform" class="voir-plus-label"></label>
+            <div class="d-flex gap-3 mt-2">
+                <img src="../img/Immoform1.png" class="rounded projet-img" onclick="ouvrirImage(this.src)">
+                <img src="../img/Immoform2.png" class="rounded projet-img" onclick="ouvrirImage(this.src)">
+            </div>
+        </div>
+
+    </div>
+</div>
 
                     </div>
                 </div>
